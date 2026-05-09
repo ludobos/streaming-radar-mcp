@@ -1,0 +1,45 @@
+{
+  "name": "streaming-radar",
+  "version": "1.2.0",
+  "description": "Streaming and media intelligence MCP server. Vertical drama, Africa streaming, piracy, sports, creator economy. 99+ tools, 4,000+ sourced datapoints, OAuth 2.1 + Bearer.",
+  "transport": "http",
+  "endpoint": "https://streaming-radar-mcp.streamingradar.workers.dev",
+  "endpoints": {
+    "primary": "https://streaming-radar-mcp.streamingradar.workers.dev",
+    "chatgpt_standard_mode": "https://streaming-radar-mcp.streamingradar.workers.dev/chatgpt"
+  },
+  "authentication": {
+    "types": ["oauth2.1", "bearer"]
+  },
+  "homepage": "https://lens.streaming-radar.com/mcp",
+  "documentation": "https://lens.streaming-radar.com/mcp",
+  "categories": ["research", "business", "media", "intelligence"],
+  "tags": [
+    "streaming",
+    "vertical-drama",
+    "africa",
+    "piracy",
+    "creator-economy",
+    "sports",
+    "datapoints",
+    "newsletter"
+  ],
+  "languages": ["en", "fr"],
+  "pricing": {
+    "model": "freemium",
+    "free": "Newsletter tools (8 tools, 70+ articles, 35+ podcasts).",
+    "paid": {
+      "tier": "Professional",
+      "amount": 299,
+      "currency": "EUR",
+      "interval": "month",
+      "includes": "Full report data silos plus analytical models (P&L, DCF, ASRI, scenarios, unit economics)."
+    }
+  },
+  "author": {
+    "name": "Ludovic Bostral",
+    "organization": "Bostral & Co",
+    "url": "https://lens.streaming-radar.com/about"
+  },
+  "spec_version": "2024-11-05"
+}
