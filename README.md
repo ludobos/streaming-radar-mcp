@@ -1,6 +1,8 @@
 # Streaming Radar MCP
 
-Streaming and media intelligence MCP server. Vertical drama, Africa streaming, piracy, sports, creator economy. **99+ tools, 4,000+ sourced datapoints**, OAuth 2.1 + Bearer auth, multi-AI client (Claude, ChatGPT, Cursor, Copilot, Perplexity, Grok).
+[![smithery badge](https://smithery.ai/badge/lbostral/streaming-radar)](https://smithery.ai/servers/lbostral/streaming-radar)
+
+Streaming and media intelligence MCP server. Vertical drama, Africa streaming, piracy, sports, creator economy. **155 tools, 4,000+ sourced datapoints**, OAuth 2.1 + Bearer auth, multi-AI client (Claude, ChatGPT, Cursor, Copilot, Perplexity, Grok).
 
 This repository is the **public listing** for the Streaming Radar MCP server. The server itself is a Cloudflare Worker hosted at `https://streaming-radar-mcp.streamingradar.workers.dev`. Source code is private.
 
