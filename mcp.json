@@ -1,6 +1,6 @@
 {
   "name": "streaming-radar",
-  "version": "1.2.0",
+  "version": "1.3.1",
   "description": "Streaming and media intelligence MCP server. Vertical drama, Africa streaming, piracy, sports, creator economy. 99+ tools, 4,000+ sourced datapoints, OAuth 2.1 + Bearer.",
   "transport": "http",
   "endpoint": "https://streaming-radar-mcp.streamingradar.workers.dev",

@@ -97,7 +97,7 @@ Compare creator economy revenue in France vs Brazil.
 
 ## Versions
 
-- Worker: v1.2.0 (May 2026)
+- Worker: v1.3.1 (May 2026)
 - MCP spec: 2024-11-05
 
 ## Author
