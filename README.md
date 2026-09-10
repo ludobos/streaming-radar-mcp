@@ -55,7 +55,7 @@ Two paths, both supported by the same worker:
 1. **OAuth 2.1 + PKCE** (recommended for Claude.ai, ChatGPT Custom Connectors). The worker implements RFC 8414 and RFC 7591.
 2. **Bearer token** (recommended for Cursor, scripts, server-side integrations): `Authorization: Bearer sl_live_<32hex>`.
 
-Free keys grant access to newsletter tools only. The Professional tier (299 EUR / month) unlocks the report silos plus analytical models.
+A public facet answers with no key at all: 11 read-only tools, 20 requests per minute per IP. Free keys add the newsletter surface. The report silos and the analytical models are available on request.
 
 ## Connect
 
@@ -107,7 +107,7 @@ Compare creator economy revenue in France vs Brazil.
 ## Pricing
 
 - **Free**: 8 newsletter tools, 1 dataviz tool, 100 requests / day soft cap.
-- **Professional**: 299 EUR / month, all silos plus analytical models, 60 requests / minute, monthly cancellation, Stripe billing. Subscribe at https://lens.streaming-radar.com/mcp
+- **Full catalog**: all five report silos plus the analytical models (P&L, DCF, ASRI, scenarios), 60 requests / minute. Access on request.
 - **Advisory**: tailored entitlements and on-call analyst time. Contact for quote.
 
 ## Live counters
