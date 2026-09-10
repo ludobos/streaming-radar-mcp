@@ -2,7 +2,7 @@
 
 [![smithery badge](https://smithery.ai/badge/lbostral/streaming-radar)](https://smithery.ai/servers/lbostral/streaming-radar)
 
-Streaming and media intelligence MCP server. Vertical drama, Africa streaming, piracy, sports, creator economy. **155 tools, 4,000+ sourced datapoints**, OAuth 2.1 + Bearer auth, multi-AI client (Claude, ChatGPT, Cursor, Copilot, Perplexity, Grok).
+Streaming and media intelligence MCP server. Vertical drama, Africa streaming, piracy, sports, creator economy. **201 tools, 18,568 sourced datapoints**, OAuth 2.1 + Bearer auth, multi-AI client (Claude, ChatGPT, Cursor, Copilot, Perplexity, Grok).
 
 This repository is the **public listing** for the Streaming Radar MCP server. The server itself is a Cloudflare Worker hosted at `https://streaming-radar-mcp.streamingradar.workers.dev`. Source code is private.
 
@@ -10,6 +10,23 @@ This repository is the **public listing** for the Streaming Radar MCP server. Th
 - Stats endpoint: https://streaming-radar-mcp.streamingradar.workers.dev/stats
 - Author: Ludovic Bostral, Bostral & Co
 - Newsletter: https://www.streaming-radar.com
+
+
+## Try it without a key
+
+A public facet answers with no authentication at all — useful to inspect the server
+before asking for access, and what MCP directories index.
+
+```bash
+curl -s -X POST https://streaming-radar-mcp.streamingradar.workers.dev/public \
+  -H 'content-type: application/json' \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}' | jq '.result.tools[].name'
+```
+
+Eleven read-only tools: the newsletter archive, the expert directory, coverage
+statistics. 20 requests per minute per IP. `GET /public` describes the facet,
+`/.well-known/mcp.json` carries the machine-readable descriptor, and the full
+catalog of 201 tools lives at `/` behind OAuth 2.1 or a Bearer key.
 
 ## What is this?
 
