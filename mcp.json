@@ -1,19 +1,30 @@
 {
   "name": "streaming-radar",
-  "version": "1.3.1",
-  "description": "Streaming and media intelligence MCP server. Vertical drama, Africa streaming, piracy, sports, creator economy. 99+ tools, 4,000+ sourced datapoints, OAuth 2.1 + Bearer.",
+  "version": "1.4.0",
+  "description": "Streaming and media intelligence MCP server. Vertical drama, Africa streaming, piracy, sports, creator economy. 201 tools, 18,568 sourced datapoints. Public facet without authentication, full catalog via OAuth 2.1 or API key.",
   "transport": "http",
   "endpoint": "https://streaming-radar-mcp.streamingradar.workers.dev",
   "endpoints": {
     "primary": "https://streaming-radar-mcp.streamingradar.workers.dev",
-    "chatgpt_standard_mode": "https://streaming-radar-mcp.streamingradar.workers.dev/chatgpt"
+    "chatgpt_standard_mode": "https://streaming-radar-mcp.streamingradar.workers.dev/chatgpt",
+    "public_facet": "https://streaming-radar-mcp.streamingradar.workers.dev/public"
   },
   "authentication": {
-    "types": ["oauth2.1", "bearer"]
+    "types": [
+      "none",
+      "oauth2.1",
+      "bearer"
+    ],
+    "note": "Public facet, no key required: 11 read-only tools (newsletter archive, expert directory, coverage stats), 20 requests per minute per IP."
   },
   "homepage": "https://lens.streaming-radar.com/mcp",
   "documentation": "https://lens.streaming-radar.com/mcp",
-  "categories": ["research", "business", "media", "intelligence"],
+  "categories": [
+    "research",
+    "business",
+    "media",
+    "intelligence"
+  ],
   "tags": [
     "streaming",
     "vertical-drama",
@@ -24,17 +35,13 @@
     "datapoints",
     "newsletter"
   ],
-  "languages": ["en", "fr"],
+  "languages": [
+    "en",
+    "fr"
+  ],
   "pricing": {
-    "model": "freemium",
-    "free": "Newsletter tools (8 tools, 70+ articles, 35+ podcasts).",
-    "paid": {
-      "tier": "Professional",
-      "amount": 299,
-      "currency": "EUR",
-      "interval": "month",
-      "includes": "Full report data silos plus analytical models (P&L, DCF, ASRI, scenarios, unit economics)."
-    }
+    "free": "Public facet, no key required: 11 read-only tools (newsletter archive, expert directory, coverage stats), 20 requests per minute per IP.",
+    "full": "Full catalog: 201 tools across five report silos and in-house analytical models. Access on request."
   },
   "author": {
     "name": "Ludovic Bostral",
